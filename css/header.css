@@ -1,140 +1,116 @@
-/* wrapper */
-#header {
+#header_navi {
   width: 100%;
-  border-bottom: 1px solid #ebebeb;
+  height: auto;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  transition: background 0.3s;
 }
-.header-inner {
+#header_navi .header_inner {
   max-width: 1440px;
-  height: 80px;
+  padding-top: 16px;
   margin: 0 auto;
-  padding: 0 24px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-}
-@media (max-width: 1280px) {
-  .header-inner {
-    height: 56px;
-  }
 }
 
 /* logo */
-.header-logo {
-  height: 16px;
-  margin-right: 50px;
-  line-height: 20px;
-}
-.header-logo > img {
-  height: 16px;
-}
-@media (max-width: 1440px) and (min-width: 1281px) {
-  .header-logo {
-    margin-right: 2vw;
-  }
-}
-@media (max-width: 1440px) {
-  .header-logo > img {
-    height: 14px;
-  }
-}
-
-/* list */
-.header-list {
-  width: 100%;
-  height: 100%;
-}
-.header-list > ul {
-  display: flex;
-  height: 100%;
-}
-.header-list > ul > li {
-  height: 100%;
-  padding: 25px 0 23px;
-  line-height: 1;
-}
-.header-list > ul > li.blank {
-  margin-left: auto;
-}
-.header-list > ul > li.blank > a {
-  display: none;
-}
-.header-list > ul > li > a {
-  display: block;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 9px 7px;
-  /* letter-spacing: -0.2535em; */
-}
-.header-list > ul > li > a.outlink:after {
-  display: inline-block;
-  width: 13px;
-  height: 12px;
-  margin-top: -3px;
-  margin-left: 7px;
-  background: url(/img/icon-outlink.svg), url(/img/icon-16-midium-link-white.svg)
-  no-repeat center;
-  content: "";
-}
-@media (max-width: 1280px) {
-  .header-list > ul {
-    display: none;
-  }
-}
-@media (max-width: 1440px) {
-  .header-list > ul > li > a {
-    font-size: 12px;
-  }
-}
-
-/* right */
-.header-right {
-  height: 100%;
-  margin-right: -12px;
-  margin-left: 20px;
-}
-.header-right > ul {
-  display: flex;
-  height: 100%;
-}
-.header-right > ul > li {
-  padding: 0 12px 0 13px;
-  line-height: 76px;
-}
-/* .header-right > ul > li:fitst-child {
+.logo {
   display: flex;
   align-items: center;
-} */
-.icon {
-  width: 23px;
-  height: 23px;
-  display: inline-block;
-  font-size: 0;
-  line-height: 30px;
+}
+.logo a {
+  padding-left: 9px;
+}
+.logo img {
   vertical-align: middle;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
-.icon-zoom {
-  background-image: url(/img/icon-zoom.svg);
+@media (min-width: 1281px) {
+  .logo img {
+    width: 120px;
+    height: 17px;
+  }
 }
-.icon-cart {
-  background-image: url(/img/icon-cart.svg);
+
+/* search_box */
+.search_box {
+  width: 330px;
+  height: auto;
+  background: #F5F5F5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 14px;
+  border-radius: 40px;
 }
-.icon-people {
-  background-image: url(/img/icon-people.svg);
+.slick_slider {
+  width: 70%;
+  display: block;
 }
-.icon-large {
+.slick_list {
+  height: 16.2344px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick_track {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.slick_slide {
+  width: 212px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: auto;
+}
+.slick_slide a {
+  font-size: 14px;
+}
+
+.search_button {
   width: 26px;
   height: 26px;
 }
-@media screen and (max-width: 1440px) and (min-width: 1101px) {
-  .icon-large {
-    width: 1.8056vw;
-    height: 1.8056vw;
-  }
+.search_button img {
+  max-width: 100%;
 }
-@media (max-width: 1280px) {
-  .header-right > ul > li {
-    line-height: 54px;
+
+/* menu_wrap */
+.menu_wrap {
+  width: 93%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu_list {
+  width: 100%;
+  display: flex;
+}
+.menu_item {
+  display: flex;
+  align-items: center;
+  padding: 0 2px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000;
+}
+.item_button {
+  border-radius: 32px;
+  padding: 0 9px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  letter-spacing: -0.15em;
+}
+.list_right {
+  margin-left: auto;
+}
+@media screen and (max-width: 1440px) and (min-width: 1281px) {
+  .item_button {
+    font-size: 0.9rem;
   }
 }
