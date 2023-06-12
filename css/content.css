@@ -1,0 +1,38 @@
+#container {
+  position: relative;
+  width: 100%;
+}
+
+.wrap-component {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.wrap-component .contents-slider {}
+.slider-list {
+  overflow: hidden;
+  opacity: 1;
+  width: 8876px;
+}
+.slider-list > div {
+  position: relative;
+  width: 1268px;
+  top: 0px;
+}
+.slider-list > div:nth-child(1) {
+  left: 0px;
+}
+.slider-list .component-text {
+  text-align: center;
+}
+.slider-list .component-text .component-text-inner {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.slider-list .visual-area > img {
+  max-width: 100%;
+}
+@media (max-width: 1440px) {
+  .slider-list .component-text .component-text-inner {
+    padding-bottom: 2.5556vw;
+  }
+}
