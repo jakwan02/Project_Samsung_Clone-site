@@ -2,37 +2,103 @@
   position: relative;
   width: 100%;
 }
-
-.wrap-component {
-  max-width: 1920px;
-  margin: 0 auto;
+.content-slide .slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: 22px;
+  height: 40px;
 }
-.wrap-component .contents-slider {}
-.slider-list {
-  overflow: hidden;
-  opacity: 1;
-  width: 8876px;
-}
-.slider-list > div {
-  position: relative;
-  width: 1268px;
-  top: 0px;
-}
-.slider-list > div:nth-child(1) {
-  left: 0px;
-}
-.slider-list .component-text {
+.component-text {
+  position: absolute;
+  width: 1392px;
   text-align: center;
+  top: 60px;
+  bottom: 60px;
 }
-.slider-list .component-text .component-text-inner {
+.component-text-inner {
   display: inline-block;
   vertical-align: bottom;
 }
-.slider-list .visual-area > img {
-  max-width: 100%;
+.box-title h2 {
+  display: block;
+}
+.box-title .sub {
+  padding-bottom: 10px;
+  line-height: 1.3;
+  font-weight: normal;
+  font-size: 24px;
+} 
+.box-title .title {
+  line-height: 1.15;
+  font-weight: bold;
+  font-size: 52px;
+}
+.box-title .desc {
+  letter-spacing: -.03em;
+  margin-top: 20px;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+.visual-area img {
+  width: 100%;
+}
+@media (max-width: 1920px) {
+  .box-title .sub {
+    padding-bottom: 0.521vw;
+    font-size: 1.25vw;
+  } 
+  .box-title .title {
+    font-size: 2.708vw;
+  }
+  .box-title .desc {
+    margin-top: 1.042vw;
+    font-size: 0.938vw;
+  }
+}
+@media (max-width: 1700px) {
+  .component-text {
+    width: 1200px;
+  }
+}
+@media (max-width: 1600px) {
+  .component-text {
+    top: 3.75vw;
+    bottom: 3.75vw;
+  }
+  .box-title .sub {
+    padding-bottom: 0.625vw;
+    font-size: 1.5vw;
+  }  
+  .box-title .title {
+    font-size: 3.25vw;
+  }
+  .box-title .desc {
+    margin-top: 1.25vw;
+    font-size: 1.125vw;
+  }
 }
 @media (max-width: 1440px) {
-  .slider-list .component-text .component-text-inner {
-    padding-bottom: 2.5556vw;
+  .component-text {
+    width: 100%;
+    padding: 0 8.33333vw;
+    top: 4.167vw;
+    bottom: 4.167vw;
+  }
+  .box-title .sub {
+    padding-bottom: 0.694vw;
+    font-size: 1.667vw;
+  } 
+  .box-title .title {
+    font-size: 3.611vw;
+  }
+  .box-title .desc {
+    margin-top: 1.389vw;
+    font-size: 1.25vw;
+  }
+}
+@media (max-width: 1100px) {
+  .component-text {
+    top: 5.455vw;
+    bottom: 5.455vw;
   }
 }
