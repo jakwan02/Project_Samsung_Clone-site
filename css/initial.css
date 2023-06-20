@@ -39,3 +39,6 @@ ol, ul, li {
 i {
   font-style: italic;
 }
+button {
+  cursor: pointer;
+}
