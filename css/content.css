@@ -165,7 +165,7 @@
 /* b2c-box */
 .b2c-box {
   width: 100%;
-  padding: 40px 0 50px;
+  padding-top: 40px;
 }
 .common-marketing-content {
   position: relative;
@@ -336,4 +336,107 @@ img {
   color: #000;
   background: #fff;
   border: 1px solid #fff;
+}
+.btn-round {
+  display: inline-block;
+  max-width: 100%;
+  min-width: 96px;
+  height: 40px;
+  background: #fff;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0 5px;
+  line-height: 38px;
+  padding: 0 24px;
+  font-size: 14px;
+  border: 1px solid #fff;
+}
+@media (max-width: 1440px) {
+  .btn-round {
+    max-width: 18.75vw;
+    min-width: 6.666667vw;
+    height: 2.7778vw;
+    line-height: 2.6389vw;
+    padding: 0 1.666667vw;
+    font-size: 0.9722vw;
+    border-radius: 1.3889vw;
+  }
+}
+@media (max-width: 1600px) {
+  .btn-round {
+    max-width: 16.875vw;
+    min-width: 6vw;
+    height: 2.5vw;
+    line-height: 2.375vw;
+    padding: 0 1.5vw;
+    font-size: 0.875vw;
+    border-radius: 1.25vw;
+  }
+}
+
+/* busanExpoExp */
+.busanExpoPcd {
+  position: relative;
+  width: 100%;
+  padding-bottom: 60px;
+}
+.busanExpoPcd .component-text {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.busanExpoPcd .component-text .box-title {
+  display: inline-block;
+}
+.busanExpoPcd .component-text .box-title .title {
+  color: #fff;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: -0.1em;
+}
+.busanExpoPcd .component-text .box-title .desc {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: -0.1em;
+}
+.busanExpoPcd .visual-area img {
+  width: 100%;
+  margin: 0 10px;
+  padding-right: 20px;
+}
+.busanExpoPcd .box-btns {
+  padding-top: 30px;
+}
+
+@media (max-width: 1920px) {
+  .busanExpoPcd .component-text .box-title .title {
+    font-size: 2.708vw;
+  }
+  .busanExpoPcd .component-text .box-title .desc {
+    margin-top: 1.042vw;
+    font-size: 0.938vw;
+  }
+}
+@media (max-width: 1600px) {
+  .busanExpoPcd .component-text .box-title .title {
+    font-size: 3.25vw;
+  }
+  .busanExpoPcd .component-text .box-title .desc {
+    margin-top: 1.25vw;
+    font-size: 1.125vw;
+  }
+}
+@media (max-width: 1440px) {
+  .busanExpoPcd .component-text .box-title .title {
+    font-size: 3.611vw;
+  }
+  .busanExpoPcd .component-text .box-title .desc {
+    margin-top: 1.389vw;
+    font-size: 1.25vw;
+  }
 }
