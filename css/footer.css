@@ -123,3 +123,40 @@
 #footer .info-detail p ~ p {
   margin-top: 10px;
 }
+
+/* copyrightBox */
+#footer .copyrightGroup {
+  padding: 15px 24px;
+}
+#footer .copyrightBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#footer .copyrightBox .copyright {
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: bold;
+  color: #707070;
+}
+#footer .copyrightBox .markBox .btn-mark {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  color: transparent;
+  background-image: no-repeat;
+  background-size: 100% auto;
+}
+#footer .copyrightBox .markBox .btn-wa {
+  width: 68px;
+  height: 48px;
+}
+#footer .copyrightBox .markBox .btn-eprivacy {
+  margin-left: 18px;
+  width: 41px;
+  height: 41px;
+}
+#footer .copyrightBox .markBox img {
+  display: block;
+  max-width: 100%;
+}
