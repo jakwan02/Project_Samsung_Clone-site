@@ -1,3 +1,8 @@
+@font-face {
+  font-family: SamsungOneKorean;
+  src: url(/font/samsungone-cufonfonts/SamsungOne-400.ttf);
+}
+
 html, body, div, h1, h2, h3, h4, h5, h6, span, object, 
 iframe, p, blockquote, pre, abbr, address, cite, code,
 del, em, img, q, small, strong, b, i, a, dl, dt, dd, ol, ul, li, 
@@ -8,7 +13,7 @@ header, menu, nav, section, button, audio, video {
   padding: 0;
   border: 0;
   outline: 0;
-  font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+  font-family: SamsungOneKorean, Dotum, '돋움', sans-serif;
   letter-spacing: -0.02em;
   box-sizing: border-box;
 }
